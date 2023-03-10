@@ -1,4 +1,128 @@
 /* Generics */
-body {
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
   }
+  
+  body{
+    background: #CA004F;
+  }
+  
+  .Box_alto,#Box_basso{
+    height: 100%;
+    margin: 0 250px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background: white;
+  }
+  
+  header{
+    margin: 0 150px;
+  }
+  
+  [class*=Info_]{
+    width: 17%;
+    height: 85%;
+    background: white;
+  }
+  
+  section{
+    border-radius: 5px;
+  }
+  
+  .hidden {
+    opacity: 0;
+    transition:0.5s;
+  }
+  
+  
+  .show {
+    opacity: 1;
+    transition:0.5s;
+  }
+  
+  /* IMPOSTAZIONI SPECIFICHE PER LE SINGOLE SEZIONI DEL SITO */
+  /* sezione titolo pagina */
+ 
+  
+  
+  h2 {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    margin: 15px 50px;
+  }
+  
+  h5{
+    text-align: center;
+    color: #CA004F;
+    font-weight: lighter;
+    padding: 15px 0 15px 10px;
+  }
+  /* sezione box alto passeggero con input da selezionare da parte dell'utente */
+  [class*=box_]{
+    width: 17%;
+    background: white;
+    margin: 10px 0;
+  }
+  
+  [class*=Input]{
+    height: 20px;
+    width: 100%;
+    background: white;
+    border: 1px solid #CA004F;
+    text-align:center;
+    border-radius: 5px;
+  }
+  
+  .Box_Passenger{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 15px 0;
+  }
+  
+  /* sezione bottoni */
+  .buttons{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+  }
+  ul.ButtonsList{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  [id*=button]{
+    width: 56px;
+    height: 30px;
+    background: lightgrey;
+    border: 1px solid red;
+    color: #CA004F;
+    border-radius: 5px;
+    margin: 10px;
+    font-weight: bold;
+  }
+  /* sezione biglietto passeggero */
+  
+  h4{
+    padding: 15px 0 15px 10px;
+  }
+  
+  
+  .Sezione_Ticket{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+  }
+  
+  .Info_Passenger{
+    background: lightgrey;
+  }
+  
+  p{
+    text-align: center;}
