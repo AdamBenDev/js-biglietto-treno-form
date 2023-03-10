@@ -1,11 +1,11 @@
-//!DEFINISCE IL PREZZO PER KM
+//! definisce il prezzo per km
 
 const prezzoPerKm = 0.21;
 let kmDaPercorrere = prompt("Inserisci il numero di chilometri da percorrere:");
 let etaPasseggero = prompt("Inserisci l'età del passeggero:");
 
 
-//!PREZZO TOTALE CALCOLO
+//! prezzo totale del calcolo 
 
 let prezzoTotale = kmDaPercorrere * prezzoPerKm;
 
@@ -21,3 +21,8 @@ if (etaPasseggero < 18) {
   } else if (etaPasseggero >= 65) {  
     prezzoTotale *= 0.6;
   }
+
+
+  //! mostra il prezzo totale con due cifre decimali
+
+  alert(`Il prezzo del biglietto è ${prezzoTotale.toFixed(2)} euro.`);  
